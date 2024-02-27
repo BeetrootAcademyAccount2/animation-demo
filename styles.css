@@ -1,0 +1,73 @@
+.container {
+  border: 10px solid black;
+  height: 600px;
+  width: 600px;
+  margin: 50px;
+  background-color: aqua;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 4px;
+  background-color: red;
+
+  /* transition-duration: 5000ms; */
+  /* transition-property: transform, background-color;
+  transition-delay: 2000ms; 
+  transition: 10000ms background-color ease-in 2000ms,
+    10000ms 2000ms transform ease-in; */
+}
+
+.container:hover .item {
+  /* animation-name: moveColoring;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; */
+  animation: moveColoring 5000ms linear forwards;
+}
+
+@keyframes moveColoring {
+  to {
+    width: 500px;
+  }
+  /* 0% {
+    transform: translateX(0px);
+    background-color: pink;
+  }
+
+  25%,
+  75% {
+    transform: translateY(500px);
+    background-color: lightblue;
+  }
+
+  50%,
+  100% {
+    transform: translateX(500px) translateY(500px);
+    background-color: coral;
+  } */
+}
+
+/* .item-1 {
+  transition-timing-function: linear;
+}
+
+.item-2 {
+  transition-timing-function: ease-in;
+}
+
+.item-3 {
+  transition-timing-function: ease-out;
+}
+
+.item-4 {
+  transition-timing-function: ease-in-out;
+}
+
+.item-5 {
+  transition-timing-function: ease;
+} */
